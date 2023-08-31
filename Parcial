@@ -1,0 +1,23 @@
+Solicitar al usuario que ingrese dos números
+  const num1 = parseFloat(prompt("Ingrese el primer número:"));
+  const num2 = parseFloat(prompt("Ingrese el segundo número:"));
+
+  // Verificar si ambos números son pares o impares
+  const esParNum1 = num1 % 2 === 0;
+  const esParNum2 = num2 % 2 === 0;
+
+  // Verificar y manejar los casos
+  switch (true) {
+    case esParNum1 && esParNum2:
+      console.log( num1 + " es par "  +  num2 + " es impar.");
+      break;
+    case esParNum1 && esParNum2:
+      console.log( num1 + " es impar " + num2 +  " es par.");
+      break;
+    case esParNum1 && esParNum2:
+      console.log("Ambos números son pares.");
+      break;
+    default:
+      console.log("Ambos números son impares.");
+      break;
+  }
